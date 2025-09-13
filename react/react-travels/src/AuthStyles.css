@@ -1,0 +1,188 @@
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-card.modern-register {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.85rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid #e1e5e9;
+  font-size: 1rem;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  outline: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  top: -8px;
+  left: 8px;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 0.8rem;
+  color: #667eea;
+}
+
+.auth-button {
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.message-error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+.register-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+.auth-card.modern-register .auth-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.auth-card.modern-register .auth-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.booking-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.bus-name {
+  font-size: 1.5rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.cancel-button {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+  background: #d9363e;
+  transform: translateY(-2px);
+}
+

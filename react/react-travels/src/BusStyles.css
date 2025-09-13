@@ -1,0 +1,81 @@
+.bus-card, .booking-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.bus-card:hover, .booking-card:hover {
+  transform: translateY(-3px);
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.seat-button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.seat-button.available {
+  background: #4caf50;
+  color: white;
+}
+
+.seat-button.booked {
+  background: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat-status {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.seat-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.legend-color.available { background: #4caf50; }
+.legend-color.booked { background: #f44336; }
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.user-bookings-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  margin-top: 2rem;
+}
