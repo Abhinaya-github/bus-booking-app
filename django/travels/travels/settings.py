@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-5f7*unkotl8l)njkzf1hd&6c7n)b@q3!crj2l9ldti%*y$+1rd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bus-booking-app-iota.vercel.app','localhost', 'bus-booking-app-4-za7c.onrender.com']
-
+ALLOWED_HOSTS = ['localhost', 'bus-booking-app-4-za7c.onrender.com','bus-booking-app-iota.vercel.app']
 
 # Application definition
 
