@@ -12,7 +12,8 @@ const BusList = ({ token }) => {
   useEffect(() => {
     const fetchBuses = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/buses/");
+        // const res = await axios.get("http://localhost:8000/api/buses/");
+        const res = await axios.get("https://bus-booking-app-4-za7c.onrender.com/api/buses/");
         setBuses(res.data);
         setFilteredBuses(res.data);
       } catch (err) {

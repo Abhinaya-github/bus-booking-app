@@ -15,7 +15,8 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/register/", form);
+      // await axios.post("http://localhost:8000/api/register/", form);
+      await axios.post("https://bus-booking-app-4-za7c.onrender.com/api/register/", form);
       setMessage("Registration successful! Redirecting to login...");
       setTimeout(() => {
         navigate("/login"); // Redirect to login after successful registration

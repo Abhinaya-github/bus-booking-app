@@ -12,7 +12,8 @@ const BusSeats = ({ token }) => {
   useEffect(() => {
     const fetchBus = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/buses/${busId}/`);
+        // const res = await axios.get(`http://localhost:8000/api/buses/${busId}/`);
+        const res = await axios.get(`https://bus-booking-app-4-za7c.onrender.com/api/buses/${busId}/`);
         setBus(res.data);
         setSeats(res.data.seats || []);
       } catch (err) {
@@ -31,7 +32,8 @@ const BusSeats = ({ token }) => {
     }
 
     try {
-      await axios.post("http://localhost:8000/api/booking/", { seat: seatId }, {
+      // await axios.post("http://localhost:8000/api/booking/", { seat: seatId }, {
+      await axios.post("https://bus-booking-app-4-za7c.onrender.com/api/booking/", { seat: seatId }, {
         headers: { Authorization: `Token ${token}` }
       });
       alert("Booking Successful");

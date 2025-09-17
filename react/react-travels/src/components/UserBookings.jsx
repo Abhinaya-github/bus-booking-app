@@ -13,7 +13,8 @@ const UserBookings = ({ token, userId }) => {
 
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/user/${userId}/bookings/`,
+          // `http://localhost:8000/api/user/${userId}/bookings/`,
+          `https://bus-booking-app-4-za7c.onrender.com/api/user/${userId}/bookings/`,
           { headers: { Authorization: `Token ${token}` } }
         );
         setBookings(response.data);
@@ -31,7 +32,8 @@ const UserBookings = ({ token, userId }) => {
 
     try {
       await axios.delete(
-        `http://localhost:8000/api/booking/${bookingId}/cancel/`,
+        // `http://localhost:8000/api/booking/${bookingId}/cancel/`,
+        `https://bus-booking-app-4-za7c.onrender.com/api/booking/${bookingId}/cancel/`,
         { headers: { Authorization: `Token ${token}` } }
       );
       // Remove canceled booking from state
