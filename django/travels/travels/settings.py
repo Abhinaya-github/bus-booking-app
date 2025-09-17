@@ -63,7 +63,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",   # Vite React dev server
+    "http://localhost:5173",
+    "https://bus-booking-app-iota.vercel.app"
 ]
 CORS_ALLOWED_ALL_ORIGINS=True
 CORS_ALLOWED_CREDENTIALS=True
